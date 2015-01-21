@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lessonslearned.Home"
+    tools:ignore="MergeRootFrame"
+    android:background="@color/second_grey">
+
+
+    <fragment
+        android:id="@+id/lessons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.lessonslearned.lessonslearned.LessonsFragment"
+        android:layout_gravity="top"
+        android:layout_below="@id/new_lesson"></fragment>
+
+    <RelativeLayout
+        android:id="@+id/no_lessons"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="100sp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/add_lesson_tip_header"
+            android:text="@string/add_lesson_information_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/InformationHeader"/>
+
+        <TextView
+            android:id="@+id/add_lesson_tip_details"
+            android:text="@string/add_lesson_information_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_lesson_tip_header"
+            style="@style/InformationContent"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no_lessons"/>
+</RelativeLayout>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/lessonsAdapter"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card">
+
+    <TextView android:id="@+id/lessonName"
+            style="@style/AdapterLessonTitle"/>
+
+    <TextView android:id="@+id/lessonDescription"
+        style="@style/AdapterLessonDescription"
+        android:layout_below="@id/lessonName"/>
+</RelativeLayout>

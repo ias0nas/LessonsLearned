@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.lessonslearned.Home" >
+
+    <item android:id="@+id/action_create_lesson"
+        android:title="@string/action_create_lesson"
+        android:icon="@drawable/ic_action_new"
+        android:showAsAction="always" />
+
+    <item android:id="@+id/action_deleted_lessons"
+        android:title="@string/action_deleted_lessons"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_help_legal"
+        android:title="@string/action_help_legal"
+        android:showAsAction="never" />
+</menu>

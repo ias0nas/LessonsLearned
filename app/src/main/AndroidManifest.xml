@@ -1,0 +1,92 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lessonslearned.lessonslearned"
+    android:versionCode="2"
+    android:versionName="2">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.lessonslearned.lessonslearned.Home"
+            android:label="@string/title_home"
+            android:icon="@drawable/ic_launcher_actionbar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lessonslearned.lessonslearned.CreateLessonActivity"
+            android:label=""
+            android:icon="@drawable/ic_launcher_actionbar"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.lessonslearned.lessonslearned.Home" >
+            <intent-filter>
+                <action android:name="com.lessonslearned.CreateLessonActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="Home" />
+        </activity>
+        <activity
+            android:name="com.lessonslearned.lessonslearned.EditLessonActivity"
+            android:label=""
+            android:icon="@drawable/ic_launcher_actionbar"
+            android:parentActivityName="com.lessonslearned.lessonslearned.Home" >
+            <intent-filter>
+                <action android:name="com.lessonslearned.EditLessonActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="Home" />
+        </activity>
+        <activity
+            android:name="com.lessonslearned.lessonslearned.ViewLessonActivity"
+            android:label=""
+            android:icon="@drawable/ic_launcher_actionbar"
+            android:parentActivityName="com.lessonslearned.lessonslearned.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="Home" />
+        </activity>
+        <activity
+            android:name="com.lessonslearned.lessonslearned.DeletedLessons"
+            android:label="@string/title_deleted_lessons"
+            android:icon="@drawable/ic_launcher_actionbar"
+            android:parentActivityName="com.lessonslearned.lessonslearned.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="Home" />
+        </activity>
+        <activity
+            android:name="com.lessonslearned.lessonslearned.HelpLegal"
+            android:label="@string/title_help_legal"
+            android:icon="@drawable/ic_launcher_actionbar"
+            android:parentActivityName="com.lessonslearned.lessonslearned.Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="Home" />
+            </activity>
+
+
+        <receiver
+            android:name="com.lessonslearned.lessonslearned.Alarm"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent_gray">#AAF0F0F0</color>
+    <color name="second_grey">#ffeeeeee</color>
+    <color name="card_white">#ffffffff</color>
+    <color name="card_shadow">#ccc</color>
+    <color name="information_header">#555</color>
+    <color name="information_content">#999</color>
+</resources>

@@ -1,0 +1,21 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/view_lesson"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView android:id="@+id/viewLessonTimestamp"
+            style="@style/ViewLessonTimestamp"
+            android:layout_alignParentRight="true"/>
+
+        <TextView android:id="@+id/viewLessonName"
+            style="@style/ViewLessonTitle"
+            android:layout_below="@id/viewLessonTimestamp"/>
+
+        <TextView android:id="@+id/viewLessonDescription"
+            style="@style/ViewLessonDescription"
+            android:layout_below="@id/viewLessonName"/>
+    </RelativeLayout>
+
+</merge>

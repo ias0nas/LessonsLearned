@@ -1,0 +1,26 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/edit_lesson"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editLessonName"
+            style="@style/DefaultEditText"
+            android:inputType="textCapSentences"
+            android:hint="@string/lesson_learned"/>
+
+        <EditText
+            android:id="@+id/editLessonDescription"
+            style="@style/DefaultEditText"
+            android:inputType="textMultiLine|textCapSentences"
+            android:gravity="bottom|left"
+            android:minLines="2"
+            android:scrollbars="vertical"
+            android:hint="@string/lesson_learned_description"
+            android:layout_below="@id/editLessonName"/>
+    </RelativeLayout>
+
+
+</merge>

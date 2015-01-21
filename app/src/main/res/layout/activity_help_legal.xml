@@ -1,0 +1,48 @@
+<ScrollView style="@style/ScrollView">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout_support"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/RulesHeader"
+            style="@style/HelpHeader"
+            android:gravity="top"
+            android:text="@string/help_header" />
+
+        <TextView
+            android:id="@+id/RulesDetails"
+            style="@style/HelpContent"
+            android:gravity="top"
+            android:text="@string/help_content" />
+
+        <TextView
+            android:id="@+id/PrivacyHeader"
+            style="@style/HelpHeader"
+            android:gravity="top"
+            android:text="@string/privacy_header" />
+
+        <TextView
+            android:id="@+id/PrivacyContent"
+            style="@style/HelpContent"
+            android:gravity="top"
+            android:linksClickable="true"
+            android:text="@string/privacy_content" />
+
+        <TextView
+            android:id="@+id/TCHeader"
+            style="@style/HelpHeader"
+            android:gravity="top"
+            android:text="@string/terms_use_header" />
+
+        <TextView
+            android:id="@+id/TCContent"
+            style="@style/HelpContent"
+            android:linksClickable="true"
+            android:gravity="top"
+            android:text="@string/terms_use_content" />
+
+    </LinearLayout>
+</ScrollView>

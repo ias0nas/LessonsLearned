@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lesson Of The Day</string>
+    <string name="title_deleted_lessons">Forgotten Lessons</string>
+    <string name="title_home">Lessons Learned</string>
+    <string name="title_help_legal">Help</string>
+    <string name="action_help_legal">Help and Legal Stuff</string>
+    <string name="action_create_lesson">Add a Lesson</string>
+    <string name="action_delete">Forget Lesson</string>
+    <string name="action_undelete">Undelete Lesson</string>
+    <string name="action_discard">Discard Changes</string>
+    <string name="action_save">Save Lesson</string>
+    <string name="action_edit">Edit Lesson</string>
+    <string name="action_deleted_lessons">Forgotten Lessons</string>
+    <string name="add_lesson_information_header">You haven\'t added a lesson yet!</string>
+    <string name="add_lesson_information_content">Get started by clicking the plus sign on the top menu. You\'ll be reminded of the things you\'ve learned every now and then</string>
+    <string name="deleted_lessons_information_header">Nothing to see here...</string>
+    <string name="deleted_lessons_information_content">You can always bring back lessons that you chose to forget</string>
+    <string name="lesson_learned">What did you learn today?</string>
+    <string name="lesson_learned_description">Long version of the story goes here\nHow did you come to the conclusion?\nFull explanation of lesson\netc</string>
+    <string name="toast_lesson_deleted">Lesson forgotten</string>
+    <string name="toast_lesson_undeleted">Lesson back in list of lessons</string>
+    <string name="toast_no_lesson_name_entered">You forgot to enter what you learned!</string>
+    <string name="help_header">How to use this App</string>
+    <string name="help_content">Start adding things you constantly need reminding of.\nAny small or big thing will do.\n\nEvery couple of days you will be reminded of a random lesson you recorded.\nAfter a couple of weeks you will start becoming like an elephant</string>
+    <string name="privacy_header">Privacy Policy</string>
+    <string name="privacy_content"><a href="https://sites.google.com/site/lessonslearnedmobileapp/privacy-policy">You can find our Privacy Policy online</a></string>
+    <string name="terms_use_header">Terms of Use</string>
+    <string name="terms_use_content"><a href="https://sites.google.com/site/lessonslearnedmobileapp/terms-of-use">Terms of Use are also online</a></string>
+</resources>
