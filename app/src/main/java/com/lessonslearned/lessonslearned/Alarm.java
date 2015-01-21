@@ -11,10 +11,7 @@ import android.os.PowerManager;
 import android.os.SystemClock;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
-
 import com.splunk.mint.Mint;
-import com.splunk.mint.MintLog;
-
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -63,6 +60,7 @@ public class Alarm extends BroadcastReceiver {
                 lastAlertDataSource.setLastAlert(randomLesson.getId());
                 lastAlertDataSource.close();
             }
+
             //release wake lock
             wl.release();
 
